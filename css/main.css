@@ -1,0 +1,46 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	margin: 0px 15px 0px 15px;
+}
+
+section {
+	margin-top: 40px;
+}
+#header, h1{
+	background-color: #4caf50;
+	top: -20px;
+	width: 100%;
+	position: fixed;
+}
+
+#footer {
+	background-color: #4caf50;
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+
+/*On large screen*/
+@media screen and (min-width: 500px){
+	table {
+		width: 40%;
+		margin: 10px;
+	}
+}
+
+/*On small screen*/
+@media screen and (max-width: 420px;){
+	table{
+		border-collapse:collapse;
+		border-spacing:0;
+		display:table;
+		width: 100%;
+	}
+}
