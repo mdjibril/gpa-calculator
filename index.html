@@ -8,8 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/w3.css">
-
-    <script src="js/gpacalculator.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
@@ -19,7 +17,7 @@
 	<main class="w3-row w3-border">
 		<section id="calculator" class="w3-container w3-half">
 			<h3 class="w3-center">Course Detail</h3>
-			<form name="formBody" method="post" onSubmit="addUpCreditsGpa; return false" class="w3-container">
+			<form name="formBody" method="post" onSubmit="addUpCreditsGpa; return false">
 			<table class="w3-table w3-centered w3-card-2" >
 				<thead>
 					<tr>
@@ -166,27 +164,17 @@
 						</td>
 					</tr>
 				</tbody>
-				<!-- <tfoot>
-					<tr>
-						<td>Total CU</td>
-						<td>GPA</td>
-					</tr>
-					<tr>
-						<td><input type="text" name="courseCode" class="w3-input"></td>
-						<td><input type="text" name="courseCode" class="w3-input"></td>
-					</tr>
-				</tfoot> -->
 			</table>
 			</form>
 			<script>
 				if (document.createElement) {
-				    document.writeln('<form class="w3-container w3-center"><input type="button" class="w3-button w3-circle w3-green" value=" + " onClick="addNewRow()"></form>');
+				    document.writeln('<form class="w3-center"><input type="button" class="w3-button w3-circle w3-green" value=" + " onClick="addNewRow()"></form>');
 				}
 			</script>
 		</section>
 		<section id="result" class="w3-container w3-half">
 			<h3 class="w3-center">Result</h3>
-			<form class="w3-container" name="results" method="post" onSubmit="return false">
+			<form name="results" method="post" onSubmit="return false">
 				<table class="w3-table w3-centered w3-card-2">
 					<thead>
 						<tr>
@@ -200,8 +188,8 @@
 							<td><input type="text" name="gpa" class="w3-input" onchange="addUpCreditsGpa()"></td>
 						</tr>
 						<tr>
-							<td>
-								<input type="button" class="w3-button w3-block w3-green" onclick="addUpCreditsGpa()">
+							<td colspan="2">
+								<input type="button" class="w3-btn w3-block w3-green" onclick="addUpCreditsGpa()" value="Calculate">
 							</td>
 						</tr>
 					</tbody>
