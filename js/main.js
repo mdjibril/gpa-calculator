@@ -88,8 +88,8 @@ function addUpCreditsGpa() {
         a.push(totalUnit);
     }
     let asum = a.reduce((partial_sum, a) => partial_sum + a,0); 
-    console.log("Array of unit " + a);
-    console.log("total unit " + asum);
+    /*console.log("Array of unit " + a);
+    console.log("total unit " + asum);*/
 
     let b = [];
     for (let i = 0; i < grade.length; ++i) {
@@ -100,20 +100,13 @@ function addUpCreditsGpa() {
         b.push(totalPoint);
     }
     let addAB = a.reduce(function(r,a,i){return r+a*b[i]},0);
-    console.log("Array of point " + b);
-    console.log("total point " + addAB);
+    /*console.log("Array of point " + b);
+    console.log("total point " + addAB);*/
 
-    let gpaScore = parseFloat(addAB / asum);
-    console.log("GPA score " + gpaScore);
+    let gpaScore = parseFloat(addAB / asum).toFixed(2);
+    // console.log("GPA score " + gpaScore);
     document.querySelector("[name = totalUnit]").value = asum;
-    // document.querySelector("[name = gpa]").value = gpaScore;
-}
-
-function calculateGpa(element) {
-    let totalUnit = 0
-    let totalPoint = 0
-
-
+    document.querySelector("[name = gpa]").value = gpaScore;
 }
 
 //Return the points corresponding to the given letter
