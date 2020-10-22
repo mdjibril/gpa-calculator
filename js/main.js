@@ -16,7 +16,6 @@ function addNewRow() {
     const option14 = document.createElement("option");
     const option15 = document.createElement("option");
     const option16 = document.createElement("option");
-    const option17 = document.createElement("option");
     const option21 = document.createElement("option");
     const option22 = document.createElement("option");
     const option23 = document.createElement("option");
@@ -26,21 +25,20 @@ function addNewRow() {
 
     input.type = "text";
     input.name = "courseCode";
-    input.classList.add("w3-input");
+    input.classList.add("code-input");
 
     select1.name = "creditUnit";
     select2.name = "grade";
-    select1.classList.add("w3-select");
-    select2.classList.add("w3-select");
+    select1.classList.add("select");
+    select2.classList.add("select");
     select1.setAttribute("onchange", "addUpCreditsGpa()");
     select2.setAttribute("onchange", "addUpCreditsGpa()");
-    option11.innerHTML = "1";
-    option12.innerHTML = "2";
-    option13.innerHTML = "3";
-    option14.innerHTML = "4";
-    option15.innerHTML = "5";
-    option16.innerHTML = "6";
-    option17.innerHTML = "7";
+    option11.innerHTML = "6";
+    option12.innerHTML = "5";
+    option13.innerHTML = "4";
+    option14.innerHTML = "3";
+    option15.innerHTML = "2";
+    option16.innerHTML = "1";
     option21.innerHTML = "A";
     option22.innerHTML = "B";
     option23.innerHTML = "C";
@@ -54,7 +52,6 @@ function addNewRow() {
     select1.appendChild(option14);
     select1.appendChild(option15);
     select1.appendChild(option16);
-    select1.appendChild(option17);
     select2.appendChild(option21);
     select2.appendChild(option22);
     select2.appendChild(option23);
@@ -71,7 +68,6 @@ function addNewRow() {
 
     tableBody.appendChild(tr);
 }
-
 
 function addUpCreditsGpa() {
     const creditUnit = document.querySelectorAll('[name = creditUnit]');
