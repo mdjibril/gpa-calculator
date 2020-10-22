@@ -1,7 +1,7 @@
 # gpa-calculator
 
 ## Live Demo
->>> https://mygpa.netlify.app/
+> https://mygpa.netlify.app/
 
-![Layout](./front.png)
+![Layout](screenshot/front.png)
 A gpa calculator
