@@ -3,5 +3,5 @@
 ## Live Demo
 >>> https://mygpa.netlify.app/
 
-[Layout](front.png)
+![Layout](./front.png)
 A gpa calculator
